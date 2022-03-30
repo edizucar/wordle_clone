@@ -65,6 +65,7 @@ def compareWords(word,guess):
 def main():
     words = list(generate_5_letter_alpha_words())
     word = random.choice(words)
+    word = "stove" # remove later
     #print(f" Cheat : {word}")
     print("    ---- Wordle ----    ")
     for i in range(1,6):
@@ -74,6 +75,7 @@ def main():
             compareWords(word,usr_input)
         else:
             print("Correct! You Win!")
+            break
     print("The correct answer was " + word)
 
 
