@@ -67,7 +67,7 @@ def main():
     word = random.choice(words)
     #print(f" Cheat : {word}")
     print("    ---- Wordle ----    ")
-    for i in range(1,6):
+    for i in range(1,7):
         print(f"   > Guess Number : {i}")
         usr_input = getWordFromUser(words)
         if usr_input != word:
